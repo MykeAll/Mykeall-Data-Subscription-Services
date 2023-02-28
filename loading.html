@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            min-height: 100vh;
+            background: #111;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            margin-top: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .ring {
+            position: relative;
+            /* ma */
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            position: absolute;
+            bottom: -10px;
+            border-radius: 50%;
+            border: 4px solid transparent;
+            border-right: 4px solid #24ecff;
+            animation: animate 1.3s linear infinite;
+            animation-delay: -1s;
+        }
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        .container .ring::before {
+            content: '';
+            position: absolute;
+            bottom: 7px;
+            right: 7px;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: #24ecff;
+            box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 15px #24ecff11;
+        }
+
+        
+        .container .ring:nth-child(2) {
+           animation: animate2 1.3s linear infinite;
+           animation-delay: -1s;
+           /* position: absolute; */
+            top: -86px;
+           border: 4px solid transparent;
+            border-left: 4px solid #93ff2d;
+        }
+        .container .ring:nth-child(2):before {
+            content: '';
+            position: absolute;
+            top: initial;
+            bottom: 7px;
+            left: 7px;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: #93ff2d;
+            box-shadow: 0 0 0 5px #93ff2d22, 0 0 0 10px #93ff2d11, 0 0 0 15px #93ff2d11;
+        }
+           @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+            
+        }
+        .container .ring:nth-child(3) {
+            animation: animate3 1.3s linear infinite;
+           animation-delay: -7s;
+            position: absolute;
+            top: -86px;
+            border: 4px solid transparent;
+            border-left: 4px solid #e41cf8;
+        }
+        .container .ring:nth-child(3):before {
+            content: '';
+            position: absolute;
+            top: initial;
+            bottom: 7px;
+            left: 7px;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: #e41cf8;
+            box-shadow: 0 0 0 5px #e41cf822, 0 0 0 10px #e41cf811, 0 0 0 15px #e41cf811;
+        }
+        @keyframes animate3 {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+            
+        }
+        
+
+        .container .ring:nth-child(4) {
+           animation: animate4 1.3s linear infinite;
+           animation-delay: -5s;
+           position: absolute;
+            bottom: -60px;
+           border: 4px solid transparent;
+            border-left: 4px solid orangered;
+        }
+        .container .ring:nth-child(4):before {
+            content: '';
+            /* position: absolute; */
+            bottom: initial;
+            top: 7px;
+            left: 7px;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: #ff7a2d;
+            box-shadow: 0 0 0 5px #ff7a2d22, 0 0 0 10px #ff7a2d11, 0 0 0 15px #ff7a2d11;
+        }
+           @keyframes animate4 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+        .container p {
+            position: absolute;
+            color: #fff;
+            font-size: 1.5em;
+            font-family: consolas;
+            bottom: -150px;
+            letter-spacing: 0.15em;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="index">
+                <a href="index.html">Index</a>
+                </li>
+
+            <!-- </li>
+            <li class="data">
+                <a href="data.html">Data</a>
+
+            </li>
+            <li class="data">
+                <a href="datatype.html">Data Type</a>
+
+            </li> -->
+            <li class="data">
+                <a href="animation.html">Animation</a>
+
+            </li>
+            <li class="data">
+                <a href="anime.html">Anime</a>
+
+            </li>
+            <li class="data">
+                <a href="loading.html">Load</a>
+
+            </li>
+            <li class="data">
+                <a href="rid.html">Animate</a>
+
+            </li>
+        </ul>
+
+    </nav>
+    <div class="container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div class="bubbles">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        <img src="./image/bubble-images-removebg-preview-removebg-preview.png" alt="">
+        
+    </div>
+</body>
+</html>

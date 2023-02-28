@@ -50,7 +50,7 @@ button a {
 }
 
 .purchase :hover {
-    background-color: yellow;
+    /* background-color: yellow; */
     color: black;
     font-size: large;
     /* border: solid black; */
@@ -68,10 +68,10 @@ button {
 }
 
 button:hover {
-    background-color: yellow;
-    color: black;
+    background-color: gray;
+    color: #ffd;
     font-size: large;
-    border: solid black;
+    border: solid white;
 }
 
 .content {
@@ -136,7 +136,7 @@ h1 {
 }
 
 .welcome {
-    background-color: green;
+    background-color:  #000729;
     width: 400px;
     height: 14%;
 }
@@ -157,8 +157,8 @@ h1 {
 .download {
         color: #fbfcfd;
         padding: 10px 25px;
-        background: green;
-        border:  solid #fff;
+        background: rgb(2, 2, 73);
+        border: 2px  solid #fff;
         border-radius: 20px;
         outline: none;
         cursor: pointer; 
@@ -167,7 +167,7 @@ h1 {
     }
     
     .download:hover {
-        background-color: yellow;
+        background-color: greenyellow;
         color: black;
         font-size: large;
         border: solid black;
@@ -359,25 +359,25 @@ li :hover {
 
 li a {
     text-decoration: none;
-    color: black;
+    color: #000729;
     /* display: flex; */
-    border: solid black;
-    background-color: yellow;
+    border: solid #000729;
+    background-color: #fff;
     padding: 10px;
-    border-radius: 20px;
-    font-weight: 900;
-    font-size: x-large;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: large;
 }
 
 .index {
-    padding: 14px;
+    padding: 4px 14px;
     /* margin: 4px; */
     list-style: none;
     /* text-decoration: none; */
 }
 
 .data {
-    padding: 14px;
+    padding: 4px 14px;
     /* margin: 4px; */
     list-style: none;
     /* text-decoration: none; */
@@ -644,8 +644,8 @@ input {
     }
     
     .purchase :hover {
-        background-color: yellow;
-        color: black;
+        /* background-color: yellow; */
+        /* color: black; */
         font-size: large;
         /* border: solid black; */
     }
@@ -667,10 +667,10 @@ input {
     }
     
     button:hover {
-        background-color: yellow;
-        color: black;
+        /* background-color: yellow; */
+        /* color: black; */
         font-size: large;
-        border: solid black;
+        /* border: solid black; */
     }
     
     .content {
@@ -722,7 +722,8 @@ input {
 }
 
 .welcome:hover {
-    background-color: green;
+    background-color: greenyellow;
+    color: #000729;
     /* width: 400px;
     height: 14%; */
 }
@@ -740,7 +741,7 @@ input {
 .download {
         color: #fbfcfd;
         padding: 7px 10px;
-        background: green;
+        /* background: green; */
         border:  solid #fff;
         border-radius: 20px;
         outline: none;
@@ -750,12 +751,12 @@ input {
     }
     
     .download:hover {
-        background-color: gray;
+        /* background-color: gray; */
         color: black;
         /* padding: 10px; */
-        font-size: x-large;
+        font-size: 18px;
         font-weight: 600;
-        border: solid black;
+        /* border: solid black; */
     }
 
 .social-links {
@@ -775,17 +776,17 @@ input {
 
 .bubbles img {
     width: 40px;
-    animation: bubble 7s linear infinite;
+    animation: bubble 14s linear infinite;
 }
 
 .bubbles{
-    width: 40%;
+    /* width: 40%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: absolute;
     bottom: -1%;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
     .bubbles img:nth-child(1){
@@ -873,31 +874,31 @@ ul {
     /* background-size: cover; */
 }
 li {
-    margin: 10px;
+    margin: 2px;
 }
 
 li a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     /* display: flex; */
-    border: solid black;
-    background-color: yellow;
-    padding: 4px;
-    border-radius: 10px;
+    /* border: 2px solid black; */
+    /* background-color: yellow; */
+    /* padding: 4px; */
+    border-radius: 5px;
     font-weight: 740;
-    font-size: medium;
+    font-size: 12px;
 }
 
-.index {
-    padding: 4px;
+.index a {
+    padding: 2px 7px;
     /* margin: 4px; */
     list-style: none;
     /* text-decoration: none; */
 }
 
-.data {
-    padding: 4px;
-    /* margin: 4px; */
+.data a {
+    padding: 2px 7px;
+    margin-top: 4px;
     list-style: none;
     /* text-decoration: none; */
 }

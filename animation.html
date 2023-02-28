@@ -6,33 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation1</title>
     <style>
-        body{
+        .anime {
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            background-attachment: fixed;
+            /* background-size: cover; */
+            /* background-attachment: fixed; */
+            position: absolute;
+            margin: 0;
+            padding: 10px;
+            background-image: url(/image/Road240_F_313859650_4ujYXyyetSNHgU0AMfv3gYjfrciPbr0W.jpg);
         }
         @media only screen and (max-width: 700px) {
-    body {
-        /* margin: 10px; */
-            max-width: 740px;
-            min-width: 340px;
-            /* height: 40vh; */
-            margin: 10px;
+    .anime {
+        
+            /* margin: 0px; */
             /* padding: 10px; */
           
     }
-    /* marquee {
-        margin-top: 40%;
-    } */
+    img {
+        /* margin-top: 10%; */
+        /* position: relative; */
+    } 
     
             
         }
     </style>
 </head>
 <link rel="stylesheet" href="style.css">
-<body background="/image/Road240_F_313859650_4ujYXyyetSNHgU0AMfv3gYjfrciPbr0W.jpg">
+<body>
+    <div class="anime" >
+        <!-- <img class="bg" src="/image/Road240_F_313859650_4ujYXyyetSNHgU0AMfv3gYjfrciPbr0W.jpg" alt=""> -->
 
-    <nav>
+        
+        <nav>
         <ul>
             <li class="index">
                 <a href="index.html">Index</a>
@@ -55,18 +61,26 @@
                 <a href="anime.html">Anime</a>
 
             </li>
+            <li class="data">
+                <a href="loading.html">Load</a>
+
+            </li>
+            <li class="data">
+                <a href="rid.html">Animate</a>
+
+            </li>
         </ul>
 
     </nav>
 
     <marquee behavior="" direction="right" scrollamount = "10">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <img src="./image/dog-dog-running.gif" alt="Dog" width="20%">&emsp;&emsp;&emsp;
         <img src="./image/animated-man-running.gif" alt="man" width="11%">&emsp;&emsp;
-        <br>
         <img src="./image/wheelchair-dog-wheelchair.gif" alt="wheeldog" width="11%">&nbsp;
         <img src="./image/boy-running.gif" alt="boy" width="11%">
     </marquee>
+</div>
     
     
     <script src="script.js"></script>
