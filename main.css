@@ -35,9 +35,9 @@ a {
     place-items: center;
 }
 
-tr {
-    /* background-color: rgb(173, 171, 171); */
-}
+/* tr {
+    background-color: rgb(173, 171, 171);
+} */
 
 .calculator {
     position: relative;
@@ -132,6 +132,6 @@ table {
     color: #0a1e23;
 }
 
-.calculator button#clear {
+/* .calculator button#clear {
 
-}
+} */
