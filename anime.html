@@ -21,7 +21,7 @@
             width: 50%; */
             height: 50%;
             width: 50%;
-            animation: left-to-right 4s ease-in forwards infinite alternate;
+            /* animation: left-to-right 4s ease-in forwards infinite alternate; */
             /* transition: transform 2s ease-in forwards 4 alternate 4s; */
             /* transition: transform 2s cubic-bezier(0.7, 0.04, 0.66, 1.71) 0.1s; */
             /* cursor: pointer; */
@@ -31,7 +31,8 @@
             /* transform: translateX(100%); */
             /* transform: translateY(100%); */
             /* background-color: green; */
-            animation-play-state: paused;
+            animation: left-to-right 4s ease-in forwards infinite alternate;
+            /* animation-play-state: paused; */
         }
 
         @keyframes left-to-right {
@@ -52,10 +53,14 @@
                 transform: translateX(100%) translateY(100%);
                 /* opacity: 1; */
             }
-            100% {
+            70% {
                 background-color: green;
                 transform: translateX(100%);
                 opacity: 1;
+            }
+            100% {
+                background-color: skyblue;
+                transform: translateX(0%);
             }
         }
         

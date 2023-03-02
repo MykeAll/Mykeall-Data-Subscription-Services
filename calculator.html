@@ -58,13 +58,14 @@
                 <i class="toggler-icon"></i>
             </div>
             <div class="display-screen">
-                <div id="display"></div>
+                <div id="display" contenteditable=""></div>
+                <h3 class="cal">MYKEALL CAL...</h3>
             </div>
             <div class="buttons">
                 <table>
                     <tr>
                         <td>
-                            <button class="btn-operator" id="clear">C</button>
+                            <button class="btn-operator" id="clear">Clear</button>
                         </td>
                         <td>
                             <button class="btn-operator" id="/">&divide;</button>
@@ -114,8 +115,8 @@
                         <td>
                             <button class="btn-number" id="3">3</button>
                         </td>
-                        <td rowspan="2">
-                            <button class="btn-equal" id="equal"> = </button>
+                        <td>
+                            <button class="btn-number" id="."> . </button>
                         </td>
                     </tr>
                     <tr>
@@ -123,10 +124,13 @@
                             <button class="btn-operator" id="(">(</button>
                         </td>
                         <td>
-                            <button class="btn-operator" id="0">0</button>
+                            <button class="btn-number" id="0">0</button>
                         </td>
                         <td>
                             <button class="btn-operator" id=")">)</button>
+                        </td>
+                        <td rowspan="2">
+                            <button class="btn-equal" id="equal">Enter</button>
                         </td>
                     </tr>
                 </table>
