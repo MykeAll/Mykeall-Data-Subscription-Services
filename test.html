@@ -248,3 +248,262 @@
     </div>
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="index">
+                <a href="index.html">Index</a>
+                </li>
+
+            <!-- </li>
+            <li class="data">
+                <a href="data.html">Data</a>
+
+            </li>
+            <li class="data">
+                <a href="datatype.html">Data Type</a>
+
+            </li> -->
+            <li class="data">
+                <a href="animation.html">Animation</a>
+
+            </li>
+            <li class="data">
+                <a href="anime.html">Anime</a>
+
+            </li>
+            <li class="data">
+                <a href="loading.html">Load</a>
+
+            </li>
+            <li class="data">
+                <a href="rid.html">Animate</a>
+
+            </li>
+            <li class="data">
+                <a href="calculator.html">Calculator</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="iphone-x">
+            <div class="screen">
+                <div class="header">
+                    <div class="time" id="time">
+                        <script>
+                            var time = document.getElementById('time').innerHTML;
+                            var today = new Date();
+                            var time = "The time is " + today.getHours() + ":" + today.getMinutes() + '<br>'+ "Today's date is: " + today;
+                            time = document.write(time);
+                        </script>
+                    </div>
+                    <div class="notch"></div>
+                    <div class="right_area">
+                        <div class="battery">
+                            <i class="fa fa-battery-full"></i>
+                        </div>
+                        <div class="wifi">
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content"></div>
+
+                <form action="" class="calculator container"></form>
+                
+                <div class="menu"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="index">
+                <a href="index.html">Index</a>
+                </li>
+
+            <!-- </li>
+            <li class="data">
+                <a href="data.html">Data</a>
+
+            </li>
+            <li class="data">
+                <a href="datatype.html">Data Type</a>
+
+            </li> -->
+            <li class="data">
+                <a href="animation.html">Animation</a>
+
+            </li>
+            <li class="data">
+                <a href="anime.html">Anime</a>
+
+            </li>
+            <li class="data">
+                <a href="loading.html">Load</a>
+
+            </li>
+            <li class="data">
+                <a href="rid.html">Animate</a>
+
+            </li>
+            <li class="data">
+                <a href="calculator.html">Calculator</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="iphone-x">
+            <div class="screen">
+                <div class="header">
+                    <div class="time" id="time">
+                        <script>
+                            var time = document.getElementById('time').innerHTML;
+                            var today = new Date();
+                            var time = "The time is " + today.getHours() + ":" + today.getMinutes() + '<br>'+ "Today's date is: " + today;
+                            time = document.write(time);
+                        </script>
+                    </div>
+                    <div class="notch"></div>
+                    <div class="right_area">
+                        <div class="battery">
+                            <i class="fa fa-battery-full"></i>
+                        </div>
+                        <div class="wifi">
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text">
+                        <h1>Casio</h1>
+                        <h2>Calculator</h2>
+                    </div>
+                    <div class="boxs">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <form action="" class="calculator container">
+                    <input type="text" placeholder="0" name="displayResult" class="area">
+
+                    <div class="key container" id="keyBoard">
+                        <div class="first-col">
+                            <div class="button">
+                                <button id="num" type="button" name="" value="AC" class="btn-work" onclick="displayResult.value=' '" id="c"> AC</button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="+/-" class="btn-work" onclick="makeNegative(displayResult.value)" id="c"> +/- </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="%" class="btn-work" onclick="calcNumbers(this.value)" id="c"> % </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="/" class="btn-work" onclick="calcNumbers(this.value)" id="c"> <i class="fa fa-divi"></i> </button>
+                            </div>
+                            
+                        </div>
+                        <div class="first-col">
+                            <div class="button">
+                                <button id="num" type="button" name="" value="7" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 7 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="8" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 8 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="9" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 9 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="*" class="btn-work" onclick="calcNumbers(this.value)" id="c"> X </button>
+                            </div>
+                        </div>
+                        <div class="first-col">
+                            <div class="button">
+                                <button id="num" type="button" name="" value="4" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 4 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="5" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 5 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="6" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 6 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="-" class="btn-work" onclick="calcNumbers(this.value)" id="eql"> - </button>
+                            </div>
+                        </div>
+                        <div class="first-col">
+                            <div class="button">
+                                <button id="num" type="button" name="" value="1" class="btn-work" onclick="calcNumbers(this.value)" id="c"> 1 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="2" onclick="calcNumbers(this.value)" id="c"> 2 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="3" onclick="calcNumbers(this.value)" id="c"> 3 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="+" class="btn-work" onclick="calcNumbers(this.value)" id="eql"> + </button>
+                            </div>
+                        </div>
+                        <div class="second-col">
+                            <div class="button">
+                                <button id="num" type="button" name="" value="0" class="zroo" onclick="calcNumbers(this.value)"> 0 </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="." onclick="calcNumbers(this.value)"> . </button>
+                            </div>
+                            <div class="button">
+                                <button id="num" type="button" name="" value="=" class="btn-equal" onclick="(displayResult.value.includes('%'))?percentage(displayResult.value):displayResult.value=eval(displayResult.value);" id="eql"> = </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="menu"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
