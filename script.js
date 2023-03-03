@@ -28,3 +28,18 @@ themeToggleBtn.onclick = () => {
     themeToggleBtn.classList.toggle('active');
     isDark = !isDark;
 }
+
+
+
+
+const button0 = Math.floor(Math.random() * 8) + 1;
+const button1 = Math.floor(Math.random() * 8) + 1;
+const button2 = Math.floor(Math.random() * 8) + 1;
+const button3 = Math.floor(Math.random() * 8) + 1;
+const button4 = Math.floor(Math.random() * 8) + 1;
+const button5 = Math.floor(Math.random() * 8) + 1;
+const button6 = Math.floor(Math.random() * 8) + 1;
+const button7 = Math.floor(Math.random() * 8) + 1;
+const button8 = Math.floor(Math.random() * 8) + 1;
+const button9 = Math.floor(Math.random() * 8) + 1;
+document.getElementById('btn-number');

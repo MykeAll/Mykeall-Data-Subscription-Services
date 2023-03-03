@@ -56,6 +56,7 @@ a {
     right: 30px;
     color: #fff;
     cursor: pointer;
+    margin-bottom: 10px;
     z-index: 1;
 }
 
@@ -133,6 +134,7 @@ button {
 
 button:hover {
     transform: scale(1.1);
+    border: solid #000;
 }
 
 button#equal {
@@ -168,9 +170,19 @@ button#equal {
     font-weight: 700;
 } 
 
+.calculator button#clear:hover {
+    border: solid #000;
+    
+}
+
 .calculator button.btn-number {
     background-color: #41b1c0;
     color: #000;
+}
+
+.calculator button.btn-number:hover {
+    border: solid #000;
+    
 }
 
 .calculator #backspace {
@@ -180,6 +192,12 @@ button#equal {
 .calculator button.btn-operator {
     background-color: #ffd0fd;
     color: #f967f3;
+}
+
+.calculator button.btn-operator:hover {
+    border: solid #fff;
+    box-shadow: 0 0 2px #000;
+
 }
 
 .calculator button.btn-equal {
@@ -260,6 +278,15 @@ button#equal {
 .calculator.dark button#clear {
     background-color: #2d191e;
     color: #bd3740;
+}
+
+.calculator.dark button#clear:hover {
+    border: solid #fff;
+
+}
+.calculator.dark button:hover {
+    border: solid #fff;
+
 }
 
 .calculator.dark button.btn-number {

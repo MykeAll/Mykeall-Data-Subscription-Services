@@ -383,6 +383,18 @@ li a {
     /* text-decoration: none; */
 }
 
+.cite {
+    position: absolute;
+    color: #fff;
+    bottom: 50%;
+    left: 34%;
+    align-self: center;
+    justify-content: center;
+}
+.cite1 {
+    padding-left: 10%;
+}
+
 
 /* 
 .table {
