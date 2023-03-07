@@ -383,16 +383,32 @@ li a {
     /* text-decoration: none; */
 }
 
-.cite {
+footer {
+    background-color: #000729;
+    border: 2px solid #ffd;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px #000;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 14px;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    color: #fff;
-    bottom: 50%;
-    left: 34%;
+}
+
+.cite {
+    /* position: absolute; */
+    color: #ffd;
+    /* left: 34%; */
     align-self: center;
     justify-content: center;
 }
 .cite1 {
-    padding-left: 10%;
+    /* padding-left: 10%; */
+    /* top: 40px; */
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
 }
 
 
