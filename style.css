@@ -44,6 +44,50 @@ body{
     justify-content: space-between;
 }
 
+ul {
+    /* background-color: brown; */
+    display: flex;
+    /* padding: 10px; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+}
+li :hover {
+    color: white;
+    background-color: green;
+    border: solid white;
+}
+
+/* ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
+li a {
+    text-decoration: none;
+    color: #000729;
+    /* display: flex; */
+    border: solid #000729;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: large;
+}
+
+.index {
+    padding: 4px 14px;
+    /* margin: 4px; */
+    list-style: none;
+    /* text-decoration: none; */
+}
+
+.data {
+    padding: 4px 14px;
+    /* margin: 4px; */
+    list-style: none;
+    /* text-decoration: none; */
+}
+
 button a {
     text-decoration: none;
     color: #fff;
@@ -135,6 +179,21 @@ h1 {
     animation: alternate-reverse;
 }
 
+.social-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.useful-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
 .welcome {
     background-color:  #000729;
     width: 400px;
@@ -173,20 +232,6 @@ h1 {
         border: solid black;
     }
 
-.social-links {
-    width: 50px;
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-}
-
-.useful-links {
-    width: 50px;
-    text-align: center;
-    position: absolute;
-    bottom: 30px;
-}
 
 .bubbles img {
     width: 50px;
@@ -339,49 +384,6 @@ h1 {
     width: 25px;
 }
 
-ul {
-    /* background-color: brown; */
-    display: flex;
-    /* padding: 10px; */
-    /* background-attachment: fixed; */
-    /* background-size: cover; */
-}
-li :hover {
-    color: white;
-    background-color: green;
-    border: solid white;
-}
-
-/* ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-} */
-
-li a {
-    text-decoration: none;
-    color: #000729;
-    /* display: flex; */
-    border: solid #000729;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: large;
-}
-
-.index {
-    padding: 4px 14px;
-    /* margin: 4px; */
-    list-style: none;
-    /* text-decoration: none; */
-}
-
-.data {
-    padding: 4px 14px;
-    /* margin: 4px; */
-    list-style: none;
-    /* text-decoration: none; */
-}
 
 footer {
     background-color: #000729;
